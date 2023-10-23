@@ -1,12 +1,16 @@
 <script>
 import demo from "../assets/demo.png";
-export let item;
+export let item = {
+    description: "Demo item",
+    name: "Demo name",
+    imageSrc: demo
+};
 </script>
 
 <div>
-    <img src={demo} alt="Demo"/>
-    <h2>{item}</h2>
-    <p>Dette er demo tekst</p>
+    <img src={item.imageSrc} alt="Demo"/>
+    <h2>{item.name}</h2>
+    <p>{item.description}</p>
 </div>
 
 <style>

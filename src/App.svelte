@@ -1,7 +1,14 @@
 <script>
   import Item from "./lib/ItemCard.svelte";
+  import demo from "./assets/demo.png";
 
-  const items = ["dragon lore", "M9 brødretta", "Nova", "Nova sniper"]
+
+  const items = [
+    {
+      description: "Dragon Lore er en snoper lissom",
+      name: "Dragon Lore",
+      imageSrc: demo
+  }]
 </script>
 
 <main>
